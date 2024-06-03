@@ -43,6 +43,14 @@ export async function run(): Promise<void> {
     // Set outputs for other workflow steps to use
     core.setOutput('time', new Date().toTimeString())
   } catch (error) {
+    core.error('Something bad happended', {
+      title: 'Bad Error',
+      file: './github/workflows/ci.yml',
+      startLine: 60,
+      startColumn: 11,
+      endColumn: 23
+    })
+
     // Fail the workflow run if an error occurs
     if (error instanceof Error) core.setFailed(error.message)
   }
