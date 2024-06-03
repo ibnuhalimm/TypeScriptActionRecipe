@@ -1,6 +1,8 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Typescript Action Recipe'
+description:
+  'Waites for some miliseconds, writes an awesome job summary to the workflow
+  output and returns the current date and time.'
+author: 'Ibnu Mustofa'
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
